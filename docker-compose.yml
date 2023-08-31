@@ -1,9 +1,9 @@
 services:
   app:
-    image: mysociety/template_data_repo:${TAG:-latest}
+    image: mysociety/citizen-assembly-data:${TAG:-latest}
     build:
       context: .
       dockerfile: Dockerfile.dev
-    working_dir: /workspaces/template_data_repo      
+    working_dir: /workspaces/citizen_assembly_data      
     volumes:
-      - ./:/workspaces/template_data_repo/
+      - ./:/workspaces/citizen_assembly_data/

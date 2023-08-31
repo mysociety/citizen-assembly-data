@@ -1,9 +1,12 @@
-# Template notebook
 
-This is a template notebook used for mySociety data science projects.
+# citizen-assembly-data
 
-You only update this repo, and don't clone directly from it. See instructions in [this repo](https://github.com/mysociety/python-data-auto-template) on how to use it as a template for new projects.
+[![badge](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mysociety/citizen-assembly-data/HEAD)
 
-Pull requests for this repo will run a test that it can be re-converted back into the template repo. 
+Dataset to track citizens assemblies in the UK
 
-Instructions on using the features of this notebook are available in [data-repo-readme.md](https://github.com/mysociety/data_common/blob/main/data-repo-readme.md).
+This repository is available online at https://github.com/mysociety/citizen-assembly-data
+
+If Github Pages are enabled, the URL is: https://mysociety.github.io/citizen-assembly-data/
+
+Instructions on using the features of this notebook (data publishing, notebook rendering, Github Pages) are available in [https://github.com/mysociety/data_common/blob/main/data-repo-readme.md](Data Common readme file).

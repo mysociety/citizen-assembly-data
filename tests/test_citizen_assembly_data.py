@@ -1,4 +1,4 @@
-import template_data_repo
+import citizen_assembly_data
 
 import pytest
 
