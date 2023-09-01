@@ -1,0 +1,16 @@
+authority_type: Nation
+local_authority_code:
+org_name: Scotland
+report_url:
+report_pdf_url: https://web.archive.org/web/20211215142757/https://www.climateassembly.scot/sites/default/files/2021-09/620640_SCT0521502140-001_Scotland%E2%80%99s%20Climate%20Assembly_Final%20Report%20Goals_WEB%20ONLY%20VERSION.pdf
+faciliator:
+assembly_status: Finished
+assembly_year: 2021
+number_participants: 105
+assembly_description: Scotland's Climate Assembly is Scotland's first citizens' assembly
+  focused on climate change. It brought together over 100 ordinary citizens from across
+  Scotland to deliberate about the climate emergency and make recommendations for
+  action.
+thematic_grouping: Climate Assembly
+source_notes: does this have to be rehosted to be scraped?
+data_source: InvolveTracker2021
