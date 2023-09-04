@@ -61,9 +61,9 @@ class AssemblyInfo(YamlModel):
         github_base = (
             "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/"
         )
-        if self.report_pdf_url is None:
+        if self.assembly_status != AssemblyStatus.FINISHED:
             return None
-        return github_base + "/data/raw/reports/" + self.unique_id + ".pdf"
+        return github_base + "data/raw/reports/" + self.unique_id + ".pdf"
 
     @computed_field
     @property
