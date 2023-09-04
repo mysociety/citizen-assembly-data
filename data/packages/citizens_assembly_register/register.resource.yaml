@@ -120,4 +120,4 @@ schema:
     constraints:
       unique: false
     example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf
-hash: c74eb729bf83dfd939cbf084b7da62ac
+hash: 0cc04d21470b07547dfb68cb5518fb33

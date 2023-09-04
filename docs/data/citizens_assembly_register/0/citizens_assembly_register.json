@@ -1,7 +1,7 @@
 {
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
-    "description": "Dataset of known citizen assemblies in the UK and their reports.  See the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.",
+    "description": "Dataset of known citizen assemblies in the UK and their reports.\nSee the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.\n",
     "version": "0.2.1",
     "licenses": [
         {
@@ -31,6 +31,15 @@
             "encoding": "utf-8",
             "schema": {
                 "fields": [
+                    {
+                        "name": "unique_id",
+                        "type": "string",
+                        "description": "A unique ID for the assembly to match against other datasets. This is a slugified version of the assembly name and year.",
+                        "constraints": {
+                            "unique": true
+                        },
+                        "example": "la-adu-2020-climate-assembly"
+                    },
                     {
                         "name": "authority_type",
                         "type": "string",
@@ -177,25 +186,17 @@
                             "unique": false
                         },
                         "example": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf"
-                    },
-                    {
-                        "name": "unique_id",
-                        "type": "string",
-                        "description": "A unique ID for the assembly to match against other datasets. This is a slugified version of the assembly name and year.",
-                        "constraints": {
-                            "unique": true
-                        },
-                        "example": "la-adu-2020-climate-assembly"
                     }
                 ]
             },
-            "hash": "72e9c07b4068b62fe69723baae040892",
+            "hash": "0cc04d21470b07547dfb68cb5518fb33",
             "data": [
                 {
+                    "unique_id": "la-glg-2021-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "GLG",
                     "org_name": "Glasgow City Council",
-                    "url": "",
+                    "url": "https://www.glasgow.gov.uk/cop26citizensassembly",
                     "report_pdf_url": "https://www.glasgow.gov.uk/CHttpHandler.ashx?id=55053&p=0",
                     "faciliator": "Ipsos MORI",
                     "assembly_status": "Finished",
@@ -205,10 +206,10 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-glg-2021-climate-assembly.pdf",
-                    "unique_id": "la-glg-2021-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-glg-2021-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-bar-2022-climate-change",
                     "authority_type": "Local Authority",
                     "local_authority_code": "BAR",
                     "org_name": "Barrow-in-Furness Borough Council",
@@ -222,14 +223,14 @@
                     "thematic_grouping": "Climate Change",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bar-2022-climate-change.pdf",
-                    "unique_id": "la-bar-2022-climate-change"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bar-2022-climate-change.pdf"
                 },
                 {
+                    "unique_id": "la-cop-2021-climate-change",
                     "authority_type": "Local Authority",
                     "local_authority_code": "COP",
                     "org_name": "Copeland Borough Council",
-                    "url": "",
+                    "url": "https://www.copeland.gov.uk/node/46747",
                     "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2021/11/Copeland-report-v0.4.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -239,14 +240,14 @@
                     "thematic_grouping": "Climate Change",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-cop-2021-climate-change.pdf",
-                    "unique_id": "la-cop-2021-climate-change"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-cop-2021-climate-change.pdf"
                 },
                 {
+                    "unique_id": "la-dud-2019-town-centre-revitalization",
                     "authority_type": "Local Authority",
                     "local_authority_code": "DUD",
                     "org_name": "Dudley Metropolitan Borough Council",
-                    "url": "",
+                    "url": "https://www.dudley.gov.uk/council-community/peoples-panel/",
                     "report_pdf_url": "https://www.dudley.gov.uk/media/13831/dudley-peoples-panel-report.pdf",
                     "faciliator": "The Democratic Society",
                     "assembly_status": "Finished",
@@ -256,14 +257,14 @@
                     "thematic_grouping": "Town centre revitalization",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-dud-2019-town-centre-revitalization.pdf",
-                    "unique_id": "la-dud-2019-town-centre-revitalization"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-dud-2019-town-centre-revitalization.pdf"
                 },
                 {
+                    "unique_id": "la-nwm-2020-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "NWM",
                     "org_name": "London Borough of Newham",
-                    "url": "",
+                    "url": "https://www.newham.gov.uk/public-health-safety/newham-climate-now",
                     "report_pdf_url": "https://www.newham.gov.uk/downloads/file/1885/newham-citizens-assembly-on-climate-change-final-report-2020",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -273,14 +274,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-nwm-2020-climate-assembly.pdf",
-                    "unique_id": "la-nwm-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-nwm-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "org-jersey-2021-assisted-dying",
                     "authority_type": "Other",
                     "local_authority_code": "",
                     "org_name": "Jersey",
-                    "url": "",
+                    "url": "https://www.gov.je/Caring/AssistedDying/pages/citizensjuryonassisteddying.aspx",
                     "report_pdf_url": "https://www.gov.je/SiteCollectionDocuments/Caring%20and%20support/ID%20Jersey%20Assisted%20Dying%20Citizens%27%20Jury%20Final%20Report%20FINAL.pdf",
                     "faciliator": "Involve",
                     "assembly_status": "Finished",
@@ -290,10 +291,10 @@
                     "thematic_grouping": "Assisted Dying",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-jersey-2021-assisted-dying.pdf",
-                    "unique_id": "org-jersey-2021-assisted-dying"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-jersey-2021-assisted-dying.pdf"
                 },
                 {
+                    "unique_id": "org-university-of-manchester-and-information-commissioners-office-2019-ai-explainability",
                     "authority_type": "Other",
                     "local_authority_code": "",
                     "org_name": "University of Manchester and Information Commissioner\u2019s Office",
@@ -307,14 +308,14 @@
                     "thematic_grouping": "AI Explainability",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-university-of-manchester-and-information-commissioners-office-2019-ai-explainability.pdf",
-                    "unique_id": "org-university-of-manchester-and-information-commissioners-office-2019-ai-explainability"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-university-of-manchester-and-information-commissioners-office-2019-ai-explainability.pdf"
                 },
                 {
+                    "unique_id": "la-dev-2021-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "DEV",
                     "org_name": "Devon County Council",
-                    "url": "",
+                    "url": "https://devonclimateemergency.org.uk/citizens-assembly/",
                     "report_pdf_url": "https://devonclimateemergency.org.uk/wp-content/uploads/2021/10/FINAL-Devon-Climate-Assembly-Report-V10.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -324,10 +325,10 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-dev-2021-climate-assembly.pdf",
-                    "unique_id": "la-dev-2021-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-dev-2021-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "org-greater-cambridge-partnership-2023-transport-environment",
                     "authority_type": "Other",
                     "local_authority_code": "",
                     "org_name": "Greater Cambridge Partnership",
@@ -341,14 +342,14 @@
                     "thematic_grouping": "Transport/Environment",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-greater-cambridge-partnership-2023-transport-environment.pdf",
-                    "unique_id": "org-greater-cambridge-partnership-2023-transport-environment"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-greater-cambridge-partnership-2023-transport-environment.pdf"
                 },
                 {
+                    "unique_id": "la-adu-2020-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "ADU",
                     "org_name": "Adur District Council",
-                    "url": "",
+                    "url": "https://www.adur-worthing.gov.uk/climate-assembly/",
                     "report_pdf_url": "https://www.adur-worthing.gov.uk/media/Media,159369,smxx.pdf",
                     "faciliator": "The Democratic Society",
                     "assembly_status": "Finished",
@@ -358,14 +359,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf",
-                    "unique_id": "la-adu-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-wnd-2023-air-quality",
                     "authority_type": "Local Authority",
                     "local_authority_code": "WND",
                     "org_name": "London Borough of Wandsworth",
-                    "url": "",
+                    "url": "https://wandsworth.gov.uk/aqca",
                     "report_pdf_url": "https://wandsworth.gov.uk/media/13723/wandsworth_citizens_assembly_on_air_quality.pdf",
                     "faciliator": "Shared Future",
                     "assembly_status": "Finished",
@@ -375,10 +376,10 @@
                     "thematic_grouping": "Air Quality",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-wnd-2023-air-quality.pdf",
-                    "unique_id": "la-wnd-2023-air-quality"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-wnd-2023-air-quality.pdf"
                 },
                 {
+                    "unique_id": "n-uk-2020-climate-assembly",
                     "authority_type": "Nation",
                     "local_authority_code": "",
                     "org_name": "UK",
@@ -392,10 +393,10 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-uk-2020-climate-assembly.pdf",
-                    "unique_id": "n-uk-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-uk-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-ben-2020-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "BEN",
                     "org_name": "London Borough of Brent",
@@ -409,14 +410,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-ben-2020-climate-assembly.pdf",
-                    "unique_id": "la-ben-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-ben-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-lds-2019-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "LDS",
                     "org_name": "Leeds City Council",
-                    "url": "",
+                    "url": "https://www.leedsclimate.org.uk/leeds-climate-change-citizens-jury",
                     "report_pdf_url": "https://www.leedsclimate.org.uk/sites/default/files/REPORT%20V1.2%20FINAL.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -426,14 +427,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-lds-2019-climate-assembly.pdf",
-                    "unique_id": "la-lds-2019-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-lds-2019-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-ntca-2021-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "NTCA",
                     "org_name": "North of Tyne Combined Authority",
-                    "url": "",
+                    "url": "https://www.northoftyne-ca.gov.uk/projects/citizens-assembly-on-climate-change/",
                     "report_pdf_url": "https://www.northoftyne-ca.gov.uk/wp-content/uploads/2021/07/NTCA-Citizens-Assembly-on-Climate-Change-report.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -443,15 +444,15 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-ntca-2021-climate-assembly.pdf",
-                    "unique_id": "la-ntca-2021-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-ntca-2021-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-wsm-2023-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "WSM",
                     "org_name": "City of Westminster",
-                    "url": "",
-                    "report_pdf_url": "https://www.westminster.gov.uk/tackling-climate-change-westminster/residents-communities-and-climate-action/climate-assembly",
+                    "url": "https://www.westminster.gov.uk/tackling-climate-change-westminster/residents-communities-and-climate-action/climate-assembly",
+                    "report_pdf_url": "",
                     "faciliator": "",
                     "assembly_status": "Ongoing",
                     "assembly_year": 2023,
@@ -460,14 +461,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-wsm-2023-climate-assembly.pdf",
-                    "unique_id": "la-wsm-2023-climate-assembly"
+                    "cached_report_url": ""
                 },
                 {
+                    "unique_id": "n-scotland-2021-political-reform",
                     "authority_type": "Nation",
                     "local_authority_code": "",
                     "org_name": "Scotland",
-                    "url": "",
+                    "url": "https://citizensassembly.theapsgroup.scot/",
                     "report_pdf_url": "https://citizensassembly.theapsgroup.scot/report/files/assets/common/downloads/Citizens%20Assembly%20Main%20Report.pdf?uni=cf2dd1870a43fb4580bc43337ffe3142",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -477,14 +478,14 @@
                     "thematic_grouping": "Political Reform",
                     "source_notes": "# this was hard to track down - scotlands two domains don't work anymnore",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-scotland-2021-political-reform.pdf",
-                    "unique_id": "n-scotland-2021-political-reform"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-scotland-2021-political-reform.pdf"
                 },
                 {
+                    "unique_id": "org-kendal-town-council-2020-climate-assembly",
                     "authority_type": "Other",
                     "local_authority_code": "",
                     "org_name": "Kendal Town Council",
-                    "url": "",
+                    "url": "https://www.kendalclimatejury.org",
                     "report_pdf_url": "https://www.kendalclimatejury.org/wp-content/uploads/2021/01/KendalClimateChangeJuryRecomendations.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -494,44 +495,61 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-kendal-town-council-2020-climate-assembly.pdf",
-                    "unique_id": "org-kendal-town-council-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-kendal-town-council-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-lac-2020-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "LAC",
                     "org_name": "Lancaster City Council",
-                    "url": "",
+                    "url": "https://www.lancaster.gov.uk/sites/climate-emergency/lancaster-district-people-s-jury",
                     "report_pdf_url": "https://www.lancaster.gov.uk/assets/attach/10184/People-s-Jury-report.pdf",
                     "faciliator": "Shared Future",
                     "assembly_status": "Finished",
                     "assembly_year": 2020,
                     "number_participants": 30.0,
-                    "assembly_description": "The Lancaster district Climate Change People\u2019s Jury was a deliberative process commissioned by Lancaster City Council to address the climate emergency. It involved thirty residents from across the district who were recruited through a stratified sampling process. The jury met for sixteen sessions between February and October 2020 to discuss and answer the question of what needs to be done in homes, neighborhoods, and districts to respond to the emergency of climate change. The process included presentations from expert witnesses and deliberation among the jury members. The jury's goal was to reach a set of recommendations on how the Lancaster district can best address the climate emergency.",
+                    "assembly_description": "The Lancaster Climate Change People\u2019s Jury was a deliberative process commissioned by Lancaster City Council to address the climate emergency. It involved thirty residents from across the district who were recruited through a stratified sampling process. The jury met for sixteen sessions between February and October 2020 to discuss and answer the question of what needs to be done in homes, neighborhoods, and districts to respond to the emergency of climate change. The process included presentations from expert witnesses and deliberation among the jury members. The jury's goal was to reach a set of recommendations on how the Lancaster district can best address the climate emergency.",
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-lac-2020-climate-assembly.pdf",
-                    "unique_id": "la-lac-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-lac-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "n-wales-2022-political-reform",
+                    "authority_type": "Nation",
+                    "local_authority_code": "",
+                    "org_name": "Wales",
+                    "url": "https://senedd.wales/how-we-work/devolution-20/",
+                    "report_pdf_url": "https://web.archive.org/web/20211118032534/https://static1.squarespace.com/static/5ca4d0b5fb18200e164e81b6/t/5d9c99a0209e7437725ecce9/1570544034964/citizen-assembly-English.pdf",
+                    "faciliator": "Sortition Foundation and Involve Foundation",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2022,
+                    "number_participants": 100.0,
+                    "assembly_description": "How can people in Wales shape their future through the\nwork of the National Assembly for Wales?\n",
+                    "thematic_grouping": "Political Reform",
+                    "source_notes": "",
+                    "data_source": "InvolveTracker2021",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-wales-2022-political-reform.pdf"
+                },
+                {
+                    "unique_id": "org-ucl-2021-political-reform",
                     "authority_type": "Other",
                     "local_authority_code": "",
                     "org_name": "UCL",
-                    "url": "",
+                    "url": "https://www.ucl.ac.uk/constitution-unit/research/deliberative-democracy/democracy-uk-after-brexit/citizens-assembly-democracy-uk",
                     "report_pdf_url": "https://www.ucl.ac.uk/constitution-unit/sites/constitution_unit/files/report_2_final_digital.pdf",
-                    "faciliator": "",
+                    "faciliator": "Involve",
                     "assembly_status": "Finished",
                     "assembly_year": 2021,
                     "number_participants": 67.0,
                     "assembly_description": "Report of the Citizens' Assembly on Democracy in the UK",
-                    "thematic_grouping": "Democracy UK",
+                    "thematic_grouping": "Political Reform",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-ucl-2021-democracy-uk.pdf",
-                    "unique_id": "org-ucl-2021-democracy-uk"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-ucl-2021-political-reform.pdf"
                 },
                 {
+                    "unique_id": "la-bne-2023-climate-change",
                     "authority_type": "Local Authority",
                     "local_authority_code": "BNE",
                     "org_name": "London Borough of Barnet",
@@ -545,14 +563,14 @@
                     "thematic_grouping": "Climate Change",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bne-2023-climate-change.pdf",
-                    "unique_id": "la-bne-2023-climate-change"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bne-2023-climate-change.pdf"
                 },
                 {
+                    "unique_id": "la-oxo-2019-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "OXO",
                     "org_name": "Oxford City Council",
-                    "url": "",
+                    "url": "https://www.oxford.gov.uk/info/20011/environment/1343/oxford_citizens_assembly_on_climate_change/6",
                     "report_pdf_url": "https://www.oxford.gov.uk/download/downloads/id/6871/oxford_citizens_assembly_on_climate_change_report_-_november_2019.pdf",
                     "faciliator": "Ipsos MORI",
                     "assembly_status": "Finished",
@@ -562,10 +580,10 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-oxo-2019-climate-assembly.pdf",
-                    "unique_id": "la-oxo-2019-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-oxo-2019-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "org-nhs-gloucestershire-clinical-commissioning-group-2020-specialist-hospital",
                     "authority_type": "NHS",
                     "local_authority_code": "",
                     "org_name": "NHS Gloucestershire Clinical Commissioning Group",
@@ -579,14 +597,14 @@
                     "thematic_grouping": "Specialist hospital",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-nhs-gloucestershire-clinical-commissioning-group-2020-specialist-hospital.pdf",
-                    "unique_id": "org-nhs-gloucestershire-clinical-commissioning-group-2020-specialist-hospital"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-nhs-gloucestershire-clinical-commissioning-group-2020-specialist-hospital.pdf"
                 },
                 {
+                    "unique_id": "la-waw-2020-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "WAW",
                     "org_name": "Warwick District Council",
-                    "url": "",
+                    "url": "https://www.warwickdc.gov.uk/info/20468/climate_change/1636/warwick_district_people_s_climate_change_inquiry",
                     "report_pdf_url": "https://www.warwickdc.gov.uk/download/downloads/id/6687/the_district_of_warwick_people_s_inquiry_on_climate_change_202021.pdf",
                     "faciliator": "Shared Future",
                     "assembly_status": "Finished",
@@ -596,14 +614,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-waw-2020-climate-assembly.pdf",
-                    "unique_id": "la-waw-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-waw-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-lbh-2021-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "LBH",
                     "org_name": "London Borough of Lambeth",
-                    "url": "",
+                    "url": "https://www.lambeth.gov.uk/lambeths-citizens-assembly-climate-crisis",
                     "report_pdf_url": "https://www.lambeth.gov.uk/sites/default/files/2021-08/Lambeth%20CA_Recommendations_Report.pdf",
                     "faciliator": "Traverse",
                     "assembly_status": "Finished",
@@ -613,15 +631,15 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-lbh-2021-climate-assembly.pdf",
-                    "unique_id": "la-lbh-2021-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-lbh-2021-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-sth-2023-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "STH",
                     "org_name": "Southampton City Council",
-                    "url": "",
-                    "report_pdf_url": "https://www.southampton.gov.uk/our-green-city/how-you-can-help/southampton-citizens-climate-assembly/",
+                    "url": "https://www.southampton.gov.uk/our-green-city/how-you-can-help/southampton-citizens-climate-assembly/",
+                    "report_pdf_url": "",
                     "faciliator": "",
                     "assembly_status": "Ongoing",
                     "assembly_year": 2023,
@@ -630,10 +648,10 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-sth-2023-climate-assembly.pdf",
-                    "unique_id": "la-sth-2023-climate-assembly"
+                    "cached_report_url": ""
                 },
                 {
+                    "unique_id": "la-bst-2021-covid-19-recovery",
                     "authority_type": "Local Authority",
                     "local_authority_code": "BST",
                     "org_name": "Bristol City Council",
@@ -647,10 +665,10 @@
                     "thematic_grouping": "COVID-19 Recovery",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bst-2021-covid-19-recovery.pdf",
-                    "unique_id": "la-bst-2021-covid-19-recovery"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bst-2021-covid-19-recovery.pdf"
                 },
                 {
+                    "unique_id": "la-bst-2020-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "BST",
                     "org_name": "Brighton and Hove City Council",
@@ -664,10 +682,10 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "no pdf version, example of report spread over multiple pages",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "",
-                    "unique_id": "la-bst-2020-climate-assembly"
+                    "cached_report_url": ""
                 },
                 {
+                    "unique_id": "la-nwm-2021-greening-the-borough",
                     "authority_type": "Local Authority",
                     "local_authority_code": "NWM",
                     "org_name": "London Borough of Newham",
@@ -681,14 +699,14 @@
                     "thematic_grouping": "Greening the Borough",
                     "source_notes": "not clearly avalaible anywhere",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "",
-                    "unique_id": "la-nwm-2021-greening-the-borough"
+                    "cached_report_url": ""
                 },
                 {
+                    "unique_id": "la-cmd-2019-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "CMD",
                     "org_name": "London Borough of Camden",
-                    "url": "",
+                    "url": "https://www.camden.gov.uk/citizens-assembly-climate-crisis",
                     "report_pdf_url": "https://www.camden.gov.uk/documents/20142/0/Camden+Citizens%27+Assembly+on+the+Climate+Crisis+-+Report.pdf/947eb4e5-5623-17a1-9964-46f351446548",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -698,14 +716,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-cmd-2019-climate-assembly.pdf",
-                    "unique_id": "la-cmd-2019-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-cmd-2019-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-cmd-2020-health-and-care",
                     "authority_type": "Local Authority",
                     "local_authority_code": "CMD",
                     "org_name": "London Borough of Camden",
-                    "url": "",
+                    "url": "https://www.camden.gov.uk/health-and-care-citizens-assembly",
                     "report_pdf_url": "https://www.camden.gov.uk/documents/20142/1006758/Camden+Health+and+Care+Citizens%27+Assembly+-+Final+Report+%28full%29.pdf/c7250d37-5c6c-5778-0c83-7105864a184c?t=1608110668706&download=true",
                     "faciliator": "Kaleidoscope Health & Care",
                     "assembly_status": "Finished",
@@ -715,14 +733,14 @@
                     "thematic_grouping": "Health and Care",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-cmd-2020-health-and-care.pdf",
-                    "unique_id": "la-cmd-2020-health-and-care"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-cmd-2020-health-and-care.pdf"
                 },
                 {
+                    "unique_id": "n-scotland-2021-climate-assembly",
                     "authority_type": "Nation",
                     "local_authority_code": "",
                     "org_name": "Scotland",
-                    "url": "",
+                    "url": "https://web.archive.org/web/20211215142757/https://www.climateassembly.scot/",
                     "report_pdf_url": "https://web.archive.org/web/20211215142757/https://www.climateassembly.scot/sites/default/files/2021-09/620640_SCT0521502140-001_Scotland%E2%80%99s%20Climate%20Assembly_Final%20Report%20Goals_WEB%20ONLY%20VERSION.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -732,14 +750,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "does this have to be rehosted to be scraped?",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-scotland-2021-climate-assembly.pdf",
-                    "unique_id": "n-scotland-2021-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-scotland-2021-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-tes-2019-vision-for-romsey",
                     "authority_type": "Local Authority",
                     "local_authority_code": "TES",
                     "org_name": "Test Valley Borough Council",
-                    "url": "",
+                    "url": "https://testvalley.gov.uk/news/2020/aug/future-of-romsey-unveiled-in-final-masterplan",
                     "report_pdf_url": "https://www.demsoc.org/uploads/store/mediaupload/163/file/Romsey%20Citizens'%20Assembly%20Report%20December%202019.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -749,14 +767,14 @@
                     "thematic_grouping": "Vision for Romsey",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-tes-2019-vision-for-romsey.pdf",
-                    "unique_id": "la-tes-2019-vision-for-romsey"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-tes-2019-vision-for-romsey.pdf"
                 },
                 {
+                    "unique_id": "la-ktt-2020-air-quality",
                     "authority_type": "Local Authority",
                     "local_authority_code": "KTT",
                     "org_name": "Royal Borough of Kingston upon Thames",
-                    "url": "",
+                    "url": "https://www.kingston.gov.uk/environmental-health/citizens-assembly-air-quality",
                     "report_pdf_url": "https://www.kingston.gov.uk/downloads/file/419/kingston-citizens-assembly-on-air-quality-full-report-2020",
                     "faciliator": "Involve Foundation",
                     "assembly_status": "Finished",
@@ -766,14 +784,14 @@
                     "thematic_grouping": "Air Quality",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-ktt-2020-air-quality.pdf",
-                    "unique_id": "la-ktt-2020-air-quality"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-ktt-2020-air-quality.pdf"
                 },
                 {
+                    "unique_id": "la-wft-2020-hate-crime",
                     "authority_type": "Local Authority",
                     "local_authority_code": "WFT",
                     "org_name": "London Borough of Waltham Forest",
-                    "url": "",
+                    "url": "https://www.demsoc.org/projects/waltham-forest-citizens-assembly",
                     "report_pdf_url": "https://www.walthamforest.gov.uk/sites/default/files/2022-04/KD_WFCA_Recommendations_Report.pdf",
                     "faciliator": "The Democratic Society",
                     "assembly_status": "Finished",
@@ -783,10 +801,10 @@
                     "thematic_grouping": "Hate crime",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-wft-2020-hate-crime.pdf",
-                    "unique_id": "la-wft-2020-hate-crime"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-wft-2020-hate-crime.pdf"
                 },
                 {
+                    "unique_id": "org-nhs-gloucestershire-clinical-commissioning-group-2021-fit-for-the-future",
                     "authority_type": "NHS",
                     "local_authority_code": "",
                     "org_name": "NHS Gloucestershire Clinical Commissioning Group",
@@ -800,14 +818,14 @@
                     "thematic_grouping": "Fit for the Future",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-nhs-gloucestershire-clinical-commissioning-group-2021-fit-for-the-future.pdf",
-                    "unique_id": "org-nhs-gloucestershire-clinical-commissioning-group-2021-fit-for-the-future"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-nhs-gloucestershire-clinical-commissioning-group-2021-fit-for-the-future.pdf"
                 },
                 {
+                    "unique_id": "org-jersey-2021-climate-assembly",
                     "authority_type": "Other",
                     "local_authority_code": "",
                     "org_name": "Jersey",
-                    "url": "",
+                    "url": "https://www.peoplepowered.org/resources-content/jerseys-citizens-assembly-on-climate-change-summary-report",
                     "report_pdf_url": "https://statesassembly.gov.je/assemblyreports/2021/r.95-2021.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -817,14 +835,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-jersey-2021-climate-assembly.pdf",
-                    "unique_id": "org-jersey-2021-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/org-jersey-2021-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-hef-2022-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "HEF",
                     "org_name": "Herefordshire Council",
-                    "url": "",
+                    "url": "https://www.herefordshire.gov.uk/council/citizens-assembly",
                     "report_pdf_url": "https://councillors.herefordshire.gov.uk/documents/s50099605/Corrected%20Recommendations%20-%20Citizens%20Climate%20Assembly%20published.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -834,10 +852,10 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-hef-2022-climate-assembly.pdf",
-                    "unique_id": "la-hef-2022-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-hef-2022-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-wlv-2020-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "WLV",
                     "org_name": "City of Wolverhampton Council",
@@ -851,31 +869,14 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "",
                     "data_source": "mySocietySearch",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-wlv-2020-climate-assembly.pdf",
-                    "unique_id": "la-wlv-2020-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-wlv-2020-climate-assembly.pdf"
                 },
                 {
-                    "authority_type": "Nation",
-                    "local_authority_code": "",
-                    "org_name": "Wales",
-                    "url": "",
-                    "report_pdf_url": "https://web.archive.org/web/20211118032534/https://static1.squarespace.com/static/5ca4d0b5fb18200e164e81b6/t/5d9c99a0209e7437725ecce9/1570544034964/citizen-assembly-English.pdf",
-                    "faciliator": "Sortition Foundation and Involve Foundation",
-                    "assembly_status": "Ongoing",
-                    "assembly_year": 2022,
-                    "number_participants": 100.0,
-                    "assembly_description": "This citizens assembly aims to address the issue of climate change and develop strategies for reducing greenhouse gas emissions.",
-                    "thematic_grouping": "Climate Assembly",
-                    "source_notes": "",
-                    "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/n-wales-2022-climate-assembly.pdf",
-                    "unique_id": "n-wales-2022-climate-assembly"
-                },
-                {
+                    "unique_id": "la-bgw-2021-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "BGW",
                     "org_name": "Blaenau Gwent County Borough Council",
-                    "url": "",
+                    "url": "https://cynnalcymru.com/blaenau-gwent-climate-assembly/",
                     "report_pdf_url": "https://cynnalcymru.com/wp-content/uploads/2021/05/Blaenau-Gwent-Climate-Assembly-Report-ENG.pdf",
                     "faciliator": "",
                     "assembly_status": "Finished",
@@ -885,8 +886,7 @@
                     "thematic_grouping": "Climate Assembly",
                     "source_notes": "not linked at all on website",
                     "data_source": "InvolveTracker2021",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bgw-2021-climate-assembly.pdf",
-                    "unique_id": "la-bgw-2021-climate-assembly"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-bgw-2021-climate-assembly.pdf"
                 }
             ]
         }

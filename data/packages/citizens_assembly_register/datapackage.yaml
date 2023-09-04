@@ -1,10 +1,10 @@
 name: citizens_assembly_register
 title: Citizens Assembly Register
-description: |
-  Dataset of known citizen assemblies in the UK and their reports.
-  See the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.
-  This dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.
-version: 0.2.0
+description: "Dataset of known citizen assemblies in the UK and their reports.\nSee\
+  \ the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for\
+  \ instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0\
+  \ - cached versions of reports may be licenced in different ways.\n"
+version: 0.2.1
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
