@@ -1,0 +1,15 @@
+authority_type: Nation
+local_authority_code:
+org_name: Wales
+url: https://senedd.wales/how-we-work/devolution-20/
+report_pdf_url: https://web.archive.org/web/20211118032534/https://static1.squarespace.com/static/5ca4d0b5fb18200e164e81b6/t/5d9c99a0209e7437725ecce9/1570544034964/citizen-assembly-English.pdf
+faciliator: Sortition Foundation and Involve Foundation
+assembly_status: Finished
+assembly_year: 2022
+number_participants: 100
+assembly_description: |
+  How can people in Wales shape their future through the
+  work of the National Assembly for Wales?
+thematic_grouping: Political Reform
+source_notes:
+data_source: InvolveTracker2021

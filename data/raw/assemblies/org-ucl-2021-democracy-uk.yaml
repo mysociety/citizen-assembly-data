@@ -1,13 +1,13 @@
 authority_type: Other
 local_authority_code:
 org_name: UCL
-url:
+url: https://www.ucl.ac.uk/constitution-unit/research/deliberative-democracy/democracy-uk-after-brexit/citizens-assembly-democracy-uk
 report_pdf_url: https://www.ucl.ac.uk/constitution-unit/sites/constitution_unit/files/report_2_final_digital.pdf
-faciliator:
+faciliator: Involve
 assembly_status: Finished
 assembly_year: 2021
 number_participants: 67
 assembly_description: Report of the Citizens' Assembly on Democracy in the UK
-thematic_grouping: Democracy UK
+thematic_grouping: Political Reform
 source_notes:
 data_source: mySocietySearch

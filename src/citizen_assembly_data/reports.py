@@ -4,7 +4,9 @@ from typing import Literal
 
 import pypdf
 import requests
-from data_common.helpers.url import Url, UrlLike
+from data_common.helpers.url import Url
+
+UrlLike = Url | str
 
 
 def is_valid_pdf_file(file: Path) -> Literal[True] | Exception:

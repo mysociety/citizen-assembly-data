@@ -1,6 +1,7 @@
 from enum import Enum
 from pathlib import Path
 
+from data_common.helpers.url import Url
 from pydantic import BaseModel, Field, computed_field, model_validator
 from ruamel.yaml import YAML
 from slugify import slugify
@@ -20,6 +21,7 @@ class YamlModel(BaseModel):
 
 
 OptionalStr = str | None
+OptionalUrl = Url | None
 
 
 class AuthorityType(str, Enum):
@@ -39,8 +41,8 @@ class AssemblyInfo(YamlModel):
     authority_type: AuthorityType
     local_authority_code: OptionalStr
     org_name: str
-    url: OptionalStr
-    report_pdf_url: OptionalStr
+    url: OptionalUrl
+    report_pdf_url: OptionalUrl
     faciliator: OptionalStr
     assembly_status: AssemblyStatus
     assembly_year: int

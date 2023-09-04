@@ -1,7 +1,7 @@
 authority_type: Local Authority
 local_authority_code: LDS
 org_name: Leeds City Council
-url:
+url: https://www.leedsclimate.org.uk/leeds-climate-change-citizens-jury
 report_pdf_url: https://www.leedsclimate.org.uk/sites/default/files/REPORT%20V1.2%20FINAL.pdf
 faciliator:
 assembly_status: Finished
