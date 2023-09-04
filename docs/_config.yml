@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
-title: citizen-assembly-data
-description: Dataset to track citizens assemblies in the UK
+title: Citizens Assembly Register
+description: Dataset to track citizens assemblies in the UK.
 
 baseurl: "/citizen-assembly-data"
 url: "https://pages.mysociety.org"
