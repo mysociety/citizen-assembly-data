@@ -1,7 +1,7 @@
 authority_type: Nation
 local_authority_code:
 org_name: UK
-report_url:
+url: https://www.climateassembly.uk
 report_pdf_url: https://www.climateassembly.uk/report/read/final-report.pdf
 faciliator:
 assembly_status: Finished

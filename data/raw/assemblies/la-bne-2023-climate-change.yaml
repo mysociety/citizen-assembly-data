@@ -1,8 +1,8 @@
 authority_type: Local Authority
 local_authority_code: BNE
 org_name: London Borough of Barnet
-report_url:
-report_pdf_url: https://engage.barnet.gov.uk/25268/widgets/72458/documents/43870
+url: https://engage.barnet.gov.uk/barnets-citizen-assembly
+report_pdf_url: https://engage.barnet.gov.uk/25268/widgets/72520/documents/44063
 faciliator:
 assembly_status: Finished
 assembly_year: 2023

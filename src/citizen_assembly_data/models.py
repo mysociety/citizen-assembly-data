@@ -1,31 +1,19 @@
 from enum import Enum
 from pathlib import Path
-from typing import Iterator
 
-import pandas as pd
 from pydantic import BaseModel, Field, computed_field, model_validator
 from ruamel.yaml import YAML
 from slugify import slugify
 from typing_extensions import Self
 
+from .reports import fetch_valid_pdf, is_valid_pdf_file
+
 
 class YamlModel(BaseModel):
     @classmethod
-    def from_df(cls, df: pd.DataFrame) -> Iterator[Self]:
-        """
-        Create a list of models from a dataframe
-        """
-        for row in df.to_dict(orient="records"):
-            yield cls(**row)
-
-    def to_yaml(self, parent_path: Path, unique_id_field: str = "unique_id"):
-        dest = parent_path / (getattr(self, unique_id_field) + ".yaml")
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        yaml = YAML()
-        data = self.model_dump()
-        data.pop(unique_id_field)
-        with dest.open("w") as f:
-            yaml.dump(data, f)
+    def from_yaml(cls, file: Path) -> Self:
+        yaml = YAML(typ="safe")
+        return cls.model_validate(yaml.load(file))
 
     class Config:
         use_enum_values = True
@@ -51,8 +39,8 @@ class AssemblyInfo(YamlModel):
     authority_type: AuthorityType
     local_authority_code: OptionalStr
     org_name: str
-    report_url: OptionalStr
-    report_pdf_url: str
+    url: OptionalStr
+    report_pdf_url: OptionalStr
     faciliator: OptionalStr
     assembly_status: AssemblyStatus
     assembly_year: int
@@ -61,6 +49,19 @@ class AssemblyInfo(YamlModel):
     thematic_grouping: str
     source_notes: OptionalStr
     data_source: str | None = Field(..., description="The source of the data")
+
+    @computed_field
+    @property
+    def cached_report_url(self) -> str | None:
+        """
+        Return a link to the cached report in github
+        """
+        github_base = (
+            "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/"
+        )
+        if self.report_pdf_url is None:
+            return None
+        return github_base + "/data/raw/reports/" + self.unique_id + ".pdf"
 
     @computed_field
     @property
@@ -85,4 +86,34 @@ class AssemblyInfo(YamlModel):
         if self.authority_type == AuthorityType.LOCAL_AUTHORITY:
             if not self.local_authority_code:
                 raise ValueError("local_authority_code must be present for LAs.")
+        return self
+
+    @property
+    def cache_pdf_path(self) -> Path:
+        return Path("data", "raw", "reports", f"{self.unique_id}.pdf")
+
+    def fetch_pdf(self):
+        if self.report_pdf_url is None:
+            raise ValueError("report_pdf_url must be present")
+
+        self.cache_pdf_path.parent.mkdir(parents=True, exist_ok=True)
+
+        fetch_valid_pdf(self.report_pdf_url, self.cache_pdf_path)
+
+    @model_validator(mode="after")
+    def backed_up_pdf(self):
+        if self.assembly_status != AssemblyStatus.FINISHED:
+            return self
+
+        if self.cache_pdf_path.exists():
+            if (e := is_valid_pdf_file(self.cache_pdf_path)) is True:
+                return self
+            elif isinstance(e, Exception):
+                raise ValueError(f"Invalid cached pdf at {self.cache_pdf_path}") from e
+
+        if not self.cache_pdf_path.exists():
+            if self.report_pdf_url is None:
+                raise ValueError("report_pdf_url must be present")
+            self.fetch_pdf()
+
         return self
