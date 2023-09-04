@@ -11,13 +11,6 @@ hashing: md5
 encoding: utf-8
 schema:
   fields:
-  - name: unique_id
-    type: string
-    description: A unique ID for the assembly to match against other datasets. This
-      is a slugified version of the assembly name and year.
-    constraints:
-      unique: true
-    example: la-adu-2020-climate-assembly
   - name: authority_type
     type: string
     description: The type of public authority (or other actor) that ran the assembly
@@ -120,4 +113,11 @@ schema:
     constraints:
       unique: false
     example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf
-hash: c74eb729bf83dfd939cbf084b7da62ac
+  - name: unique_id
+    type: string
+    description: A unique ID for the assembly to match against other datasets. This
+      is a slugified version of the assembly name and year.
+    constraints:
+      unique: true
+    example: la-adu-2020-climate-assembly
+hash: 72e9c07b4068b62fe69723baae040892
