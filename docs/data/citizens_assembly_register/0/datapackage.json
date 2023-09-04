@@ -1,8 +1,8 @@
 {
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
-    "description": "Dataset of known citizen assemblies in the UK and their reports\n",
-    "version": "0.2.0",
+    "description": "Dataset of known citizen assemblies in the UK and their reports.  See the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.",
+    "version": "0.2.1",
     "licenses": [
         {
             "name": "CC-BY-4.0",
@@ -54,7 +54,8 @@
         },
         "change_log": {
             "0.1.0": "",
-            "0.2.0": "New field(s) added to resource: url,cached_report_url"
+            "0.2.0": "New field(s) added to resource: url,cached_report_url",
+            "0.2.1": "Minor change in data for resource(s): register"
         }
     },
     "resources": [
@@ -153,11 +154,11 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
-                                2020,
                                 2021,
+                                2022,
                                 2019,
-                                2023,
-                                2022
+                                2020,
+                                2023
                             ]
                         },
                         "example": 2019
@@ -231,7 +232,7 @@
                     }
                 ]
             },
-            "hash": "946f3616523716cd0028af512ccedeaa"
+            "hash": "72e9c07b4068b62fe69723baae040892"
         }
     ]
 }
