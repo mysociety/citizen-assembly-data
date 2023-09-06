@@ -2,7 +2,13 @@
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
     "description": "Dataset of known citizen assemblies in the UK and their reports.\nSee the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.\n",
-    "version": "0.2.1",
+    "version": "0.3.0",
+    "keywords": [
+        "UK",
+        "UK Local data",
+        "Citizens Assembly",
+        "Registry"
+    ],
     "licenses": [
         {
             "name": "CC-BY-4.0",
@@ -55,7 +61,8 @@
         "change_log": {
             "0.1.0": "",
             "0.2.0": "New field(s) added to resource: url,cached_report_url",
-            "0.2.1": "Minor change in data for resource(s): register"
+            "0.2.1": "Minor change in data for resource(s): register",
+            "0.3.0": "New field(s) added to resource: licence_notes"
         }
     },
     "resources": [
@@ -91,9 +98,9 @@
                             "unique": false,
                             "enum": [
                                 "Local Authority",
-                                "Other",
+                                "NHS",
                                 "Nation",
-                                "NHS"
+                                "Other"
                             ]
                         },
                         "example": "Local Authority"
@@ -163,10 +170,10 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
-                                2021,
-                                2022,
                                 2019,
                                 2020,
+                                2021,
+                                2022,
                                 2023
                             ]
                         },
@@ -222,17 +229,26 @@
                         "example": "InvolveTracker2021"
                     },
                     {
+                        "name": "licence_notes",
+                        "type": "string",
+                        "description": "Notes on creative commons (or other) licence, or copyright notices",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "2019 Ipsos MORI - all rights reserved."
+                    },
+                    {
                         "name": "cached_report_url",
                         "type": "string",
                         "description": "A link to a cached version of the report PDF in this archive.",
                         "constraints": {
                             "unique": false
                         },
-                        "example": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf"
+                        "example": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-adu-2020-climate-assembly.pdf"
                     }
                 ]
             },
-            "hash": "0cc04d21470b07547dfb68cb5518fb33"
+            "hash": "3d6c9277102de2174038b54d554e157b"
         }
     ]
 }

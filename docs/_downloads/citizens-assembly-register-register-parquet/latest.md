@@ -5,6 +5,6 @@ package: citizens_assembly_register
 title: register
 filename: register.parquet
 version: latest
-full_version: 0.2.1
+full_version: 0.3.0
 file: /data/citizens_assembly_register/latest/register.parquet
 ---

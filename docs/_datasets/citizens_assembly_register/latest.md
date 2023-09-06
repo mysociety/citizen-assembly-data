@@ -6,6 +6,11 @@ description: "Dataset of known citizen assemblies in the UK and their reports.\n
   \ instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0\
   \ - cached versions of reports may be licenced in different ways.\n"
 version: latest
+keywords:
+- UK
+- UK Local data
+- Citizens Assembly
+- Registry
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
@@ -46,6 +51,7 @@ custom:
     0.1.0: ''
     0.2.0: 'New field(s) added to resource: url,cached_report_url'
     0.2.1: 'Minor change in data for resource(s): register'
+    0.3.0: 'New field(s) added to resource: licence_notes'
 resources:
 - title: Citizens Assembly Register
   description: Basic dataset of known UK citizens assemblies
@@ -74,9 +80,9 @@ resources:
         unique: false
         enum:
         - Local Authority
-        - Other
-        - Nation
         - NHS
+        - Nation
+        - Other
       example: Local Authority
     - name: local_authority_code
       type: string
@@ -123,10 +129,10 @@ resources:
       constraints:
         unique: false
         enum:
-        - 2021
-        - 2022
         - 2019
         - 2020
+        - 2021
+        - 2022
         - 2023
       example: 2019
     - name: number_participants
@@ -163,13 +169,19 @@ resources:
         - InvolveTracker2021
         - mySocietySearch
       example: InvolveTracker2021
+    - name: licence_notes
+      type: string
+      description: Notes on creative commons (or other) licence, or copyright notices
+      constraints:
+        unique: false
+      example: 2019 Ipsos MORI - all rights reserved.
     - name: cached_report_url
       type: string
       description: A link to a cached version of the report PDF in this archive.
       constraints:
         unique: false
-      example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf
-  hash: 0cc04d21470b07547dfb68cb5518fb33
-full_version: 0.2.1
+      example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-adu-2020-climate-assembly.pdf
+  hash: 3d6c9277102de2174038b54d554e157b
+full_version: 0.3.0
 permalink: /datasets/citizens_assembly_register/latest
 ---
