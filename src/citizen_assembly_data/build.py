@@ -19,4 +19,6 @@ def load_items():
     cols = df.columns.tolist()
     cols.insert(0, cols.pop(cols.index("unique_id")))
     df = df[cols]
+    # sort by unique_id
+    df = df.sort_values("unique_id")
     df.to_parquet(dest_folder / "register.parquet")
