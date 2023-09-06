@@ -5,6 +5,11 @@ description: "Dataset of known citizen assemblies in the UK and their reports.\n
   \ instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0\
   \ - cached versions of reports may be licenced in different ways.\n"
 version: 0.2.1
+keywords:
+- UK
+- UK Local data
+- Citizens Assembly
+- Registry
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
