@@ -51,6 +51,9 @@ class AssemblyInfo(YamlModel):
     thematic_grouping: str
     source_notes: OptionalStr
     data_source: str | None = Field(..., description="The source of the data")
+    licence_notes: OptionalStr = Field(
+        default=None, description="CC licence/copyright notes"
+    )
 
     @computed_field
     @property

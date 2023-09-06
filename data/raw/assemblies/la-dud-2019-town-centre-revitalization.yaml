@@ -3,7 +3,7 @@ local_authority_code: DUD
 org_name: Dudley Metropolitan Borough Council
 url: https://www.dudley.gov.uk/council-community/peoples-panel/
 report_pdf_url: https://www.dudley.gov.uk/media/13831/dudley-peoples-panel-report.pdf
-faciliator: The Democratic Society
+faciliator: Democratic Society
 assembly_status: Finished
 assembly_year: 2019
 number_participants: 40
@@ -12,3 +12,4 @@ assembly_description: Developing recommendations for making Dudley and Brierley 
 thematic_grouping: Town centre revitalization
 source_notes:
 data_source: InvolveTracker2021
+licence_notes: CC-BY

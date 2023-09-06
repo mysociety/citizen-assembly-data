@@ -3,7 +3,7 @@ local_authority_code: TES
 org_name: Test Valley Borough Council
 url: https://testvalley.gov.uk/news/2020/aug/future-of-romsey-unveiled-in-final-masterplan
 report_pdf_url: "https://www.demsoc.org/uploads/store/mediaupload/163/file/Romsey%20Citizens'%20Assembly%20Report%20December%202019.pdf"
-faciliator:
+faciliator: Democratic Society
 assembly_status: Finished
 assembly_year: 2019
 number_participants: 42
@@ -12,3 +12,4 @@ assembly_description: Developing recommendations for improving the area around C
 thematic_grouping: Vision for Romsey
 source_notes:
 data_source: InvolveTracker2021
+licence_notes: CC-BY

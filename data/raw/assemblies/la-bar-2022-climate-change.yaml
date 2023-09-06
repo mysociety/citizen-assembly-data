@@ -3,7 +3,7 @@ local_authority_code: BAR
 org_name: Barrow-in-Furness Borough Council
 url: https://barrowbc.gov.uk/climate-emergency/citizens-jury/
 report_pdf_url: https://sharedfuturecic.org.uk/wp-content/uploads/2022/03/Furness-Citizens-Jury-on-Climate-Change-Report-Final.pdf
-faciliator:
+faciliator: Shared Future
 assembly_status: Finished
 assembly_year: 2022
 number_participants: 20
@@ -15,3 +15,5 @@ assembly_description: The Furness Citizens’ Jury on Climate Change was a delib
 thematic_grouping: Climate Change
 source_notes:
 data_source: mySocietySearch
+licence_notes: CC BY-NC-SA 4.0
+

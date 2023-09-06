@@ -2,8 +2,8 @@ authority_type: NHS
 local_authority_code:
 org_name: NHS Gloucestershire Clinical Commissioning Group
 url:
-report_pdf_url: https://citizensjuries.org/wp-content/uploads/2021/02/GLOS-CCG-FFTF-2021-CJ-Jurors-Report-v1.pdf
-faciliator:
+report_pdf_url: https://citizensjuries.org/wp-content/uploads/2021/02/FFTF-Consultation-Citizens-Jury-Report-Jan-2021-v1.pdf
+faciliator: Citizens Juries
 assembly_status: Finished
 assembly_year: 2021
 number_participants: 18

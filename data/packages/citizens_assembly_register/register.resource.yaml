@@ -25,9 +25,9 @@ schema:
       unique: false
       enum:
       - Local Authority
-      - Other
-      - Nation
       - NHS
+      - Nation
+      - Other
     example: Local Authority
   - name: local_authority_code
     type: string
@@ -74,10 +74,10 @@ schema:
     constraints:
       unique: false
       enum:
-      - 2021
-      - 2022
       - 2019
       - 2020
+      - 2021
+      - 2022
       - 2023
     example: 2019
   - name: number_participants
@@ -114,10 +114,16 @@ schema:
       - InvolveTracker2021
       - mySocietySearch
     example: InvolveTracker2021
+  - name: licence_notes
+    type: string
+    description: Notes on creative commons (or other) licence, or copyright notices
+    constraints:
+      unique: false
+    example: 2019 Ipsos MORI - all rights reserved.
   - name: cached_report_url
     type: string
     description: A link to a cached version of the report PDF in this archive.
     constraints:
       unique: false
-    example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main//data/raw/reports/la-adu-2020-climate-assembly.pdf
-hash: 0cc04d21470b07547dfb68cb5518fb33
+    example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-adu-2020-climate-assembly.pdf
+hash: 4235ead7db97e68a0ba7d0eb0d444ebd

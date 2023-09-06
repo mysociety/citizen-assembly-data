@@ -3,7 +3,7 @@ local_authority_code: LDS
 org_name: Leeds City Council
 url: https://www.leedsclimate.org.uk/leeds-climate-change-citizens-jury
 report_pdf_url: https://www.leedsclimate.org.uk/sites/default/files/REPORT%20V1.2%20FINAL.pdf
-faciliator:
+faciliator: SHared Future
 assembly_status: Finished
 assembly_year: 2019
 number_participants: 25
@@ -14,3 +14,4 @@ assembly_description: The Leeds Climate Change Citizens' Jury was a deliberative
 thematic_grouping: Climate Assembly
 source_notes:
 data_source: InvolveTracker2021
+licence_notes: CC BY-NC-SA 4.0
