@@ -25,7 +25,9 @@ def fetch_pdf_from_url(url: UrlLike, dest_path: Path):
 
     print(f"Downloading {url}")
     # download the pdf
-    bytes_content = requests.get(url).content
+    bytes_content = requests.get(
+        url, headers={"User-Agent": "mySoc Climate Assembly scraper"}
+    ).content
     dest_path.write_bytes(bytes_content)
     return dest_path
 
