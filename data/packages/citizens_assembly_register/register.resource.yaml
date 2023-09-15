@@ -1,7 +1,7 @@
 title: Citizens Assembly Register
 description: Basic dataset of known UK citizens assemblies
 custom:
-  row_count: 41
+  row_count: 42
 path: register.parquet
 name: register
 profile: data-resource
@@ -46,7 +46,7 @@ schema:
     description: Link to an official page about the assembly
     constraints:
       unique: false
-    example: https://barrowbc.gov.uk/climate-emergency/citizens-jury/
+    example: data/raw/assemblies/la-sth-2023-climate-assembly.yaml
   - name: report_pdf_url
     type: string
     description: Link (as direct as possible) to a PDF of the assembly report
@@ -126,4 +126,4 @@ schema:
     constraints:
       unique: false
     example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-adu-2020-climate-assembly.pdf
-hash: 3d6c9277102de2174038b54d554e157b
+hash: 29a87d28c9e76f7655ce0187b570ffb0

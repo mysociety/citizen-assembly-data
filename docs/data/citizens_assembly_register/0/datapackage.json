@@ -2,7 +2,7 @@
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
     "description": "Dataset of known citizen assemblies in the UK and their reports.\nSee the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.\n",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "keywords": [
         "UK",
         "UK Local data",
@@ -62,7 +62,8 @@
             "0.1.0": "",
             "0.2.0": "New field(s) added to resource: url,cached_report_url",
             "0.2.1": "Minor change in data for resource(s): register",
-            "0.3.0": "New field(s) added to resource: licence_notes"
+            "0.3.0": "New field(s) added to resource: licence_notes",
+            "0.4.0": "Change in data for resource(s): register"
         }
     },
     "resources": [
@@ -70,7 +71,7 @@
             "title": "Citizens Assembly Register",
             "description": "Basic dataset of known UK citizens assemblies",
             "custom": {
-                "row_count": 41
+                "row_count": 42
             },
             "path": "register.parquet",
             "name": "register",
@@ -130,7 +131,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "https://barrowbc.gov.uk/climate-emergency/citizens-jury/"
+                        "example": "data/raw/assemblies/la-sth-2023-climate-assembly.yaml"
                     },
                     {
                         "name": "report_pdf_url",
@@ -248,7 +249,7 @@
                     }
                 ]
             },
-            "hash": "3d6c9277102de2174038b54d554e157b"
+            "hash": "29a87d28c9e76f7655ce0187b570ffb0"
         }
     ]
 }

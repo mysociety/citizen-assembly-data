@@ -4,7 +4,7 @@ description: "Dataset of known citizen assemblies in the UK and their reports.\n
   \ the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for\
   \ instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0\
   \ - cached versions of reports may be licenced in different ways.\n"
-version: 0.3.0
+version: 0.4.0
 keywords:
 - UK
 - UK Local data
@@ -51,3 +51,4 @@ custom:
     0.2.0: 'New field(s) added to resource: url,cached_report_url'
     0.2.1: 'Minor change in data for resource(s): register'
     0.3.0: 'New field(s) added to resource: licence_notes'
+    0.4.0: 'Change in data for resource(s): register'
