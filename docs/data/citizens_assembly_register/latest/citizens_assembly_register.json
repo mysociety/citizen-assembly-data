@@ -2,7 +2,7 @@
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
     "description": "Dataset of known citizen assemblies in the UK and their reports.\nSee the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.\n",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "keywords": [
         "UK",
         "UK Local data",
@@ -204,7 +204,7 @@
                     }
                 ]
             },
-            "hash": "29a87d28c9e76f7655ce0187b570ffb0",
+            "hash": "deea3f1cf842bce366690d38b34d6ae3",
             "data": [
                 {
                     "unique_id": "la-adu-2020-climate-assembly",
@@ -297,9 +297,9 @@
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-bne-2023-climate-change.pdf"
                 },
                 {
-                    "unique_id": "la-bst-2020-climate-assembly",
+                    "unique_id": "la-bnh-2020-climate-assembly",
                     "authority_type": "Local Authority",
-                    "local_authority_code": "BST",
+                    "local_authority_code": "BNH",
                     "org_name": "Brighton and Hove City Council",
                     "url": "https://www.brighton-hove.gov.uk/environment/brighton-hove-climate-assembly-findings-report#tab--3-the-assemblys-recommendations",
                     "report_pdf_url": "",
@@ -312,7 +312,7 @@
                     "source_notes": "no pdf version, example of report spread over multiple pages",
                     "data_source": "InvolveTracker2021",
                     "licence_notes": "",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-bst-2020-climate-assembly.pdf"
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-bnh-2020-climate-assembly.pdf"
                 },
                 {
                     "unique_id": "la-bst-2021-covid-19-recovery",
