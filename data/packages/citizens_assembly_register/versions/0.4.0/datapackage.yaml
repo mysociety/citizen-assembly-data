@@ -1,0 +1,54 @@
+name: citizens_assembly_register
+title: Citizens Assembly Register
+description: "Dataset of known citizen assemblies in the UK and their reports.\nSee\
+  \ the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for\
+  \ instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0\
+  \ - cached versions of reports may be licenced in different ways.\n"
+version: 0.4.0
+keywords:
+- UK
+- UK Local data
+- Citizens Assembly
+- Registry
+licenses:
+- name: CC-BY-4.0
+  path: https://creativecommons.org/licenses/by/4.0/
+  title: Creative Commons Attribution 4.0 International License
+contributors:
+- title: mySociety
+  path: https://mysociety.org
+  role: author
+custom:
+  build: citizen_assembly_data.build:load_items
+  tests:
+  - test_citizens_assembly_register
+  dataset_order: 0
+  download_options:
+    gate: default
+    survey: default
+    header_text: default
+  formats:
+    csv: true
+    parquet: true
+    gpkg: false
+    geojson: false
+  is_geodata: false
+  composite:
+    xlsx:
+      include: all
+      exclude: none
+      render: true
+    sqlite:
+      include: all
+      exclude: none
+      render: true
+    json:
+      include: all
+      exclude: none
+      render: true
+  change_log:
+    0.1.0: ''
+    0.2.0: 'New field(s) added to resource: url,cached_report_url'
+    0.2.1: 'Minor change in data for resource(s): register'
+    0.3.0: 'New field(s) added to resource: licence_notes'
+    0.4.0: 'Change in data for resource(s): register'
