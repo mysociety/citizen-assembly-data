@@ -27,6 +27,7 @@ OptionalUrl = Url | None
 class AuthorityType(str, Enum):
     LOCAL_AUTHORITY = "Local Authority"
     NATION = "Nation"
+    TOWN_COUNCIL = "Town Council"
     OTHER = "Other"
     NHS = "NHS"
 
