@@ -2,7 +2,7 @@
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
     "description": "Dataset of known citizen assemblies in the UK and their reports.\nSee the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.\n",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "keywords": [
         "UK",
         "UK Local data",
@@ -28,7 +28,7 @@
             "title": "Citizens Assembly Register",
             "description": "Basic dataset of known UK citizens assemblies",
             "custom": {
-                "row_count": 51
+                "row_count": 50
             },
             "name": "register",
             "profile": "data-resource",
@@ -42,7 +42,7 @@
                         "type": "string",
                         "description": "A unique ID for the assembly to match against other datasets. This is a slugified version of the assembly name and year.",
                         "constraints": {
-                            "unique": false
+                            "unique": true
                         },
                         "example": "la-adu-2020-climate-assembly"
                     },
@@ -208,7 +208,7 @@
                     }
                 ]
             },
-            "hash": "81c843b9c289c3cf098aead9d1a780f8",
+            "hash": "2dfd248573162722859f99fa529ce19c",
             "data": [
                 {
                     "unique_id": "la-adu-2020-climate-assembly",
@@ -424,24 +424,6 @@
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
                     "licence_notes": "CC BY-NC-SA 4.0",
-                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-cop-2021-climate-assembly.pdf"
-                },
-                {
-                    "unique_id": "la-cop-2021-climate-assembly",
-                    "authority_type": "Local Authority",
-                    "local_authority_code": "COP",
-                    "org_name": "Copeland Borough Council",
-                    "url": "https://sharedfuturecic.org.uk/reports/the-copeland-peoples-panel-on-climate-change-july-september-2021/",
-                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/The-peoples-climate-panel-Copeland-2021.pdf",
-                    "faciliator": "Shared Future",
-                    "assembly_status": "Finished",
-                    "assembly_year": 2021,
-                    "number_participants": 30.0,
-                    "assembly_description": "The Copeland People\u2019s Panel on Climate Change ran in 2021, as part of the National Lottery funded Zero Carbon Cumbria Partnership, to identify the ideas, strategies and actions needed to respond to the climate crisis in the Copeland area. The panel of 30 Copeland residents met between eight and ten times, over Zoom, and produced 22 recommendations.",
-                    "thematic_grouping": "Climate Assembly",
-                    "source_notes": "",
-                    "data_source": "mySocietySearch",
-                    "licence_notes": "",
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-cop-2021-climate-assembly.pdf"
                 },
                 {

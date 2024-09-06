@@ -2,7 +2,7 @@
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
     "description": "Dataset of known citizen assemblies in the UK and their reports.\nSee the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.\n",
-    "version": "0.5.0",
+    "version": "0.6.0",
     "keywords": [
         "UK",
         "UK Local data",
@@ -65,7 +65,8 @@
             "0.3.0": "New field(s) added to resource: licence_notes",
             "0.4.0": "Change in data for resource(s): register",
             "0.4.1": "Minor change in data for resource(s): register",
-            "0.5.0": "Change in data for resource(s): register"
+            "0.5.0": "Change in data for resource(s): register",
+            "0.6.0": "Change in data for resource(s): register"
         }
     },
     "resources": [
@@ -73,7 +74,7 @@
             "title": "Citizens Assembly Register",
             "description": "Basic dataset of known UK citizens assemblies",
             "custom": {
-                "row_count": 51
+                "row_count": 50
             },
             "path": "register.parquet",
             "name": "register",
@@ -89,7 +90,7 @@
                         "type": "string",
                         "description": "A unique ID for the assembly to match against other datasets. This is a slugified version of the assembly name and year.",
                         "constraints": {
-                            "unique": false
+                            "unique": true
                         },
                         "example": "la-adu-2020-climate-assembly"
                     },
@@ -255,7 +256,7 @@
                     }
                 ]
             },
-            "hash": "81c843b9c289c3cf098aead9d1a780f8"
+            "hash": "2dfd248573162722859f99fa529ce19c"
         }
     ]
 }
