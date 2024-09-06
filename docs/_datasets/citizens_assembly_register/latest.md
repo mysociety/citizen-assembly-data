@@ -54,11 +54,12 @@ custom:
     0.3.0: 'New field(s) added to resource: licence_notes'
     0.4.0: 'Change in data for resource(s): register'
     0.4.1: 'Minor change in data for resource(s): register'
+    0.5.0: 'Change in data for resource(s): register'
 resources:
 - title: Citizens Assembly Register
   description: Basic dataset of known UK citizens assemblies
   custom:
-    row_count: 42
+    row_count: 51
   path: register.parquet
   name: register
   profile: data-resource
@@ -73,7 +74,7 @@ resources:
       description: A unique ID for the assembly to match against other datasets. This
         is a slugified version of the assembly name and year.
       constraints:
-        unique: true
+        unique: false
       example: la-adu-2020-climate-assembly
     - name: authority_type
       type: string
@@ -85,6 +86,7 @@ resources:
         - NHS
         - Nation
         - Other
+        - Town Council
       example: Local Authority
     - name: local_authority_code
       type: string
@@ -131,18 +133,21 @@ resources:
       constraints:
         unique: false
         enum:
+        - 2016
+        - 2018
         - 2019
         - 2020
         - 2021
         - 2022
         - 2023
-      example: 2019
+        - 2024
+      example: 2016
     - name: number_participants
       type: number
       description: Number of participants in the assembly
       constraints:
         unique: false
-      example: 16.0
+      example: 15.0
     - name: assembly_description
       type: string
       description: A short description of the assembly
@@ -183,7 +188,7 @@ resources:
       constraints:
         unique: false
       example: https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-adu-2020-climate-assembly.pdf
-  hash: deea3f1cf842bce366690d38b34d6ae3
-full_version: 0.4.1
+  hash: 81c843b9c289c3cf098aead9d1a780f8
+full_version: 0.5.0
 permalink: /datasets/citizens_assembly_register/latest
 ---

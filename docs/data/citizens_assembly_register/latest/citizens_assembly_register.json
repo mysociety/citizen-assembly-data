@@ -2,7 +2,7 @@
     "name": "citizens_assembly_register",
     "title": "Citizens Assembly Register",
     "description": "Dataset of known citizen assemblies in the UK and their reports.\nSee the [GitHub page](https://github.com/mysociety/citizen-assembly-data#readme) for instructions on adding new data.\nThis dataset itself is licenced as CC-BY-4.0 - cached versions of reports may be licenced in different ways.\n",
-    "version": "0.4.1",
+    "version": "0.5.0",
     "keywords": [
         "UK",
         "UK Local data",
@@ -28,7 +28,7 @@
             "title": "Citizens Assembly Register",
             "description": "Basic dataset of known UK citizens assemblies",
             "custom": {
-                "row_count": 42
+                "row_count": 51
             },
             "name": "register",
             "profile": "data-resource",
@@ -42,7 +42,7 @@
                         "type": "string",
                         "description": "A unique ID for the assembly to match against other datasets. This is a slugified version of the assembly name and year.",
                         "constraints": {
-                            "unique": true
+                            "unique": false
                         },
                         "example": "la-adu-2020-climate-assembly"
                     },
@@ -56,7 +56,8 @@
                                 "Local Authority",
                                 "NHS",
                                 "Nation",
-                                "Other"
+                                "Other",
+                                "Town Council"
                             ]
                         },
                         "example": "Local Authority"
@@ -126,14 +127,17 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
+                                2016,
+                                2018,
                                 2019,
                                 2020,
                                 2021,
                                 2022,
-                                2023
+                                2023,
+                                2024
                             ]
                         },
-                        "example": 2019
+                        "example": 2016
                     },
                     {
                         "name": "number_participants",
@@ -142,7 +146,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 16.0
+                        "example": 15.0
                     },
                     {
                         "name": "assembly_description",
@@ -204,7 +208,7 @@
                     }
                 ]
             },
-            "hash": "deea3f1cf842bce366690d38b34d6ae3",
+            "hash": "81c843b9c289c3cf098aead9d1a780f8",
             "data": [
                 {
                     "unique_id": "la-adu-2020-climate-assembly",
@@ -225,6 +229,24 @@
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-adu-2020-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-bar-2021-climate-assembly",
+                    "authority_type": "Local Authority",
+                    "local_authority_code": "BAR",
+                    "org_name": "Borough of Barrow-in-Furness",
+                    "url": "https://sharedfuturecic.org.uk/reports/the-furness-citizens-jury-on-climate-change/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/Citizens-Jury-Climate-Furness-Cumbria-2022.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2021,
+                    "number_participants": 25.0,
+                    "assembly_description": "The Furness Citizens\u2019 Jury on Climate Change saw 25 citizens come together to consider what should happen in the Furness area to address the emergency of climate change. The jury met for ten Tuesday evening sessions over a three-month period, via Zoom, and heard from a range of expert opinions before reaching a series of recommendations for the council.",
+                    "thematic_grouping": "Climate Assembly",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-bar-2021-climate-assembly.pdf"
+                },
+                {
                     "unique_id": "la-bar-2022-climate-change",
                     "authority_type": "Local Authority",
                     "local_authority_code": "BAR",
@@ -241,6 +263,24 @@
                     "data_source": "mySocietySearch",
                     "licence_notes": "CC BY-NC-SA 4.0",
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-bar-2022-climate-change.pdf"
+                },
+                {
+                    "unique_id": "la-bbd-2022-climate-assembly",
+                    "authority_type": "Local Authority",
+                    "local_authority_code": "BBD",
+                    "org_name": "Blackburn with Darwen Borough Council",
+                    "url": "https://sharedfuturecic.org.uk/reports/the-blackburn-with-darwen-peoples-jury-on-the-climate-change-crisis/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/Peoples-Jury-Climate-Blackburn-2022.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2022,
+                    "number_participants": 26.0,
+                    "assembly_description": "The People\u2019s Jury on Climate Change was run on behalf of Blackburn with Darwen Council, to give residents a say on how to tackle the issues relating to climate change in their borough. After 30 hours of deliberation, the jury produced a set of 15 recommendations on how to address the climate emergency in the Blackburn with Darwen area.",
+                    "thematic_grouping": "Climate Assembly",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-bbd-2022-climate-assembly.pdf"
                 },
                 {
                     "unique_id": "la-ben-2020-climate-assembly",
@@ -384,6 +424,24 @@
                     "source_notes": "",
                     "data_source": "InvolveTracker2021",
                     "licence_notes": "CC BY-NC-SA 4.0",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-cop-2021-climate-assembly.pdf"
+                },
+                {
+                    "unique_id": "la-cop-2021-climate-assembly",
+                    "authority_type": "Local Authority",
+                    "local_authority_code": "COP",
+                    "org_name": "Copeland Borough Council",
+                    "url": "https://sharedfuturecic.org.uk/reports/the-copeland-peoples-panel-on-climate-change-july-september-2021/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/The-peoples-climate-panel-Copeland-2021.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2021,
+                    "number_participants": 30.0,
+                    "assembly_description": "The Copeland People\u2019s Panel on Climate Change ran in 2021, as part of the National Lottery funded Zero Carbon Cumbria Partnership, to identify the ideas, strategies and actions needed to respond to the climate crisis in the Copeland area. The panel of 30 Copeland residents met between eight and ten times, over Zoom, and produced 22 recommendations.",
+                    "thematic_grouping": "Climate Assembly",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-cop-2021-climate-assembly.pdf"
                 },
                 {
@@ -603,6 +661,24 @@
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-oxo-2019-climate-assembly.pdf"
                 },
                 {
+                    "unique_id": "la-pre-2024-climate-assembly",
+                    "authority_type": "Local Authority",
+                    "local_authority_code": "PRE",
+                    "org_name": "Preston City Council",
+                    "url": "https://sharedfuturecic.org.uk/reports/preston-peoples-climate-jury/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/Preston-Peoples-Jury-on-Climate-Change-Final.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2024,
+                    "number_participants": 27.0,
+                    "assembly_description": "In early 2024, 27 Preston District residents met to consider how Preston stakeholders could work together to address the opportunities and challenges of climate change in a way that is fair to everyone. After 30 hours of deliberation, the Jury produced 24 recommendations covering food, housing and buildings, transport, and other climate change-related topics.",
+                    "thematic_grouping": "Climate Assembly",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-pre-2024-climate-assembly.pdf"
+                },
+                {
                     "unique_id": "la-sth-2023-climate-assembly",
                     "authority_type": "Local Authority",
                     "local_authority_code": "STH",
@@ -709,6 +785,24 @@
                     "data_source": "mySocietySearch",
                     "licence_notes": "Marked \"Private and Confidential\"",
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-wlv-2020-climate-assembly.pdf"
+                },
+                {
+                    "unique_id": "la-wmca-2016-health-and-care",
+                    "authority_type": "Local Authority",
+                    "local_authority_code": "WMCA",
+                    "org_name": "West Midlands Combined Authority",
+                    "url": "https://sharedfuturecic.org.uk/reports/the-west-midlands-mental-health-commission-citizens-jury/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/Mental-Health-Commission-West-Midlands-2016.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2016,
+                    "number_participants": 15.0,
+                    "assembly_description": "In spring 2016, fifteen residents of the West Midlands with lived experience of mental health problems, met for eight sessions of deliberation, to produce a set of recommendations for the West Midlands Mental Health Commission on how public services can be transformed in the context of a devolution deal for mental health and well-being.",
+                    "thematic_grouping": "Health and Care",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/la-wmca-2016-health-and-care.pdf"
                 },
                 {
                     "unique_id": "la-wnd-2023-air-quality",
@@ -819,6 +913,24 @@
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/n-wales-2022-political-reform.pdf"
                 },
                 {
+                    "unique_id": "org-bude-climate-partnership-2023-climate-assembly",
+                    "authority_type": "Other",
+                    "local_authority_code": "",
+                    "org_name": "Bude Climate Partnership",
+                    "url": "https://sharedfuturecic.org.uk/reports/bude-area-community-jury-on-climate-change/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/The-community-climate-Jury-Bude-2023.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2023,
+                    "number_participants": 53.0,
+                    "assembly_description": "The Bude Area Community Jury on Climate Change brought together 34 citizens aged 16 to 86 from across the wider Bude area to consider how the community could respond to a changing climate. The jury produced 11 principles for future decision making on sea level rise, and 29 recommendations covering sea level rise, awareness raising, and other climate change-related topics.",
+                    "thematic_grouping": "Climate Assembly",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/org-bude-climate-partnership-2023-climate-assembly.pdf"
+                },
+                {
                     "unique_id": "org-greater-cambridge-partnership-2023-transport-environment",
                     "authority_type": "Other",
                     "local_authority_code": "",
@@ -874,11 +986,11 @@
                 },
                 {
                     "unique_id": "org-kendal-town-council-2020-climate-assembly",
-                    "authority_type": "Other",
+                    "authority_type": "Town Council",
                     "local_authority_code": "",
                     "org_name": "Kendal Town Council",
                     "url": "https://www.kendalclimatejury.org",
-                    "report_pdf_url": "https://www.kendalclimatejury.org/wp-content/uploads/2021/01/KendalClimateChangeJuryRecomendations.pdf",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/Climate-Jury-Kendal-2020.pdf",
                     "faciliator": "Shared Future",
                     "assembly_status": "Finished",
                     "assembly_year": 2020,
@@ -925,6 +1037,60 @@
                     "data_source": "InvolveTracker2021",
                     "licence_notes": "",
                     "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/org-nhs-gloucestershire-clinical-commissioning-group-2021-fit-for-the-future.pdf"
+                },
+                {
+                    "unique_id": "org-northern-housing-consortium-2021-climate-assembly",
+                    "authority_type": "Other",
+                    "local_authority_code": "",
+                    "org_name": "Northern Housing Consortium",
+                    "url": "https://sharedfuturecic.org.uk/reports/the-social-housing-tenants-climate-jury-report/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/Social-Housing-Tenants-Climate-Jury-2021.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2021,
+                    "number_participants": 30.0,
+                    "assembly_description": "The Social Housing Tenants\u2019 Climate Jury saw 30 social housing tenants from across the North meet online over 10 weeks between July and September 2021, to explore tenants\u2019 views and needs around retrofit and low carbon heating technologies.",
+                    "thematic_grouping": "Climate Assembly",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/org-northern-housing-consortium-2021-climate-assembly.pdf"
+                },
+                {
+                    "unique_id": "org-scottish-health-council-2018-health-and-care",
+                    "authority_type": "Other",
+                    "local_authority_code": "",
+                    "org_name": "Scottish Health Council",
+                    "url": "https://sharedfuturecic.org.uk/reports/realistic-medicine-our-voice-citizens-jury-on-shared-decision-making/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/Health-and-social-care-Scotland-2019.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2018,
+                    "number_participants": 24.0,
+                    "assembly_description": "In the \u2018Our Voice\u2019 Citizens Jury on Shared Decision-making, a diverse group of 24 Scottish citizens gathered over three days to make recommendations on shared decision-making in health and social care.",
+                    "thematic_grouping": "Health and Care",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/org-scottish-health-council-2018-health-and-care.pdf"
+                },
+                {
+                    "unique_id": "org-shipley-town-council-2023-climate-assembly",
+                    "authority_type": "Town Council",
+                    "local_authority_code": "",
+                    "org_name": "Shipley Town Council",
+                    "url": "https://sharedfuturecic.org.uk/reports/shipleys-citizens-report-on-climate-change/",
+                    "report_pdf_url": "https://sharedfuturecic.org.uk/wp-content/uploads/2024/04/Citizens-Jury-on-climate-Shipley-2023.pdf",
+                    "faciliator": "Shared Future",
+                    "assembly_status": "Finished",
+                    "assembly_year": 2023,
+                    "number_participants": 25.0,
+                    "assembly_description": "The Shipley Town Council Citizens\u2019 Jury, commissioned by Shipley Town Council with support from a National Lottery \u2018Together for Our Planet\u2019 grant, brought together 25 residents to explore how local stakeholders could work together to limit climate change and its impacts while protecting their environment and health. The juery produced seven headline recommendations including building retrofit and skills development, the creation of a \u2018pollinator corridor\u2019 of private and public green spaces, and giving greater priority to pedestrian and people-powered transport.",
+                    "thematic_grouping": "Climate Assembly",
+                    "source_notes": "",
+                    "data_source": "mySocietySearch",
+                    "licence_notes": "",
+                    "cached_report_url": "https://raw.githubusercontent.com/mysociety/citizen-assembly-data/main/data/raw/reports/org-shipley-town-council-2023-climate-assembly.pdf"
                 },
                 {
                     "unique_id": "org-ucl-2021-political-reform",

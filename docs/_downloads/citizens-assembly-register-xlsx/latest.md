@@ -5,6 +5,6 @@ package: citizens_assembly_register
 title: citizens_assembly_register_xlsx
 filename: citizens_assembly_register.xlsx
 version: latest
-full_version: 0.4.1
+full_version: 0.5.0
 file: /data/citizens_assembly_register/latest/citizens_assembly_register.xlsx
 ---
